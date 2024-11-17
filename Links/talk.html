@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini-clone</title>
+    <link rel="stylesheet" href="talk.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" type="image/png" href="./Assets/fevicon.png" sizes="16x16">
+</head>
+
+<body>
+    <!-- <div class="sidebar">
+        <span class="material-symbols-outlined menu"> menu </span>
+        <div class="new-chat">
+            <span class="material-symbols-outlined add"> add </span><span class="text">New Chat</span>
+        </div>
+    </div> -->
+    <div class="container">
+        <nav>
+            <div class="gemini">
+                Hope :Your Personal Assistant
+            </div>
+        </nav>
+        <div class="heading">
+            <span class="gradient-text" id="name">Hello, Name</span>
+            <p class="">How can I help you today?</p>
+        </div>
+        <div class="suggestions">
+            <div>
+                What are the most effective meditation techniques for relieving stress and tension?
+            </div>
+
+            <div>
+                How does regular meditation practice help in managing daily stress and anxiety?
+            </div>
+            <div>
+                Can mindfulness meditation be used to reduce physical symptoms of stress?
+            </div>
+            <div>
+                What are the best breathing exercises to practice during meditation to cure stress?
+            </div>
+        </div>
+        <div class="answer1"></div>
+        <div class="answer2"></div>
+        <div class="prompt">
+            <div class="textarea" contenteditable="true">Enter a Prompt Here</div>
+            <span class="material-symbols-outlined add_img" id="photoAdd">
+                add_photo_alternate
+            </span>
+            <span class="material-symbols-outlined mic" id="mic"> mic </span>
+            <span class="material-symbols-outlined submit" id="send"> send </span>
+            <span class="material-symbols-outlined stop" id="stopCir"> stop_circle </span>
+        </div>
+    </div>
+</body>
+<script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+<script type="module">
+    import { GoogleGenerativeAI } from "@google/generative-ai";
+    // document.querySelector("button").addEventListener("click", () => {
+    //   console.log("hello");
+    //   document.querySelector(".sidebar").style.width = "50px";
+    // });
+
+    // Access your API key (see "Set up your API key" above)
+    // const genAI = new GoogleGenerativeAI(
+    //   "AIzaSyDkM8Z_kNwDwXMVo2lySKyh-90iKiimc4s"
+    // );
+
+    // async function run() {
+    //   // The Gemini 1.5 models are versatile and work with both text-only and multimodal prompts
+    //   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    //   const prompt = "Write a story about a magic backpack.";
+
+    //   const result = await model.generateContent(prompt);
+    //   const response = await result.response;
+    //   const text = response.text();
+    //   console.log(text);
+    // }
+
+    // run();
+</script>
+<script type="module" src="talk.js"></script>
+
+</html>

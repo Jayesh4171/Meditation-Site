@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./record.css">
+    <link rel="icon" type="image/png" href="./Assets/fevicon.png" sizes="16x16">
+</head>
+<body>
+    <div id="header">
+        <a href="../index.html" style="text-decoration: none; ">
+            <p style="display: flex; align-items: center;"><span class="material-symbols-outlined">home</span><span id="home1" style="font-size: larger; font-weight: 600;">/Home</span><span id="firstLetter1">H</span></p>
+        </a>
+        <h1 id="nameLogo" class="animate__animated animate__zoomIn" style="font-size: 40px; font-family: Martel, serif;">आत्मयात्रा</h1>
+        <div id="buttons">
+            <p id="firstLetter"></p>
+            <a href="./Links/login.html"><button id="logIn">Log In</button><p id="name"></p>
+            <span class="material-symbols-outlined" id="profileLogo">person</span></a>
+        </div>
+    </div>
+
+    <div id="main_container">
+
+        <div id="right_container">
+            <h1>Record Your Daily Progress here!</h1>
+            <br><br><br>
+            <p id="message">You haven't added any note yet.</p>
+            <div id="notes_container"></div>
+        </div>
+
+        <div id="left_container">
+            <div id="bounceDiv">
+                <div id="first">
+                    <textarea placeholder="// write your notes here" id="text-area" rows="13" cols="60"></textarea>
+                    <div class="colors-notes-text">
+                        <p>Text</p>
+                        <input type="color" name="" id="color-text">
+                        <p>Notes</p>
+                        <input type="color" name="" id="color">
+                    </div>
+                </div>
+                <div id="button">
+                    <button>Add Notes</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="./record.js"></script>
+</body>
+</html>
